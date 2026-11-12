@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Código Palavra</title>
+<meta name="description" content="Jogo de alfabetização e letramento com missões, XP e recompensas.">
+<meta name="theme-color" content="#0b0f1a">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Código Palavra">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header id="hud">
+    <button class="hud-av" id="hud-av" data-act="shop" aria-label="Loja">🤖</button>
+    <div class="hud-lv">
+      <span id="hud-lv">Nv 1</span>
+      <div class="xpbar"><i id="hud-xpbar"></i></div>
+    </div>
+    <span class="chip combo" id="hud-combo" hidden>🔥 x2</span>
+    <span class="chip coins">🪙 <b id="hud-coins">0</b></span>
+  </header>
+
+  <main id="view"></main>
+</div>
+
+<canvas id="fx"></canvas>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="modal" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
